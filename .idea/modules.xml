@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mypy.iml" filepath="$PROJECT_DIR$/mypy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mypy_moudle/mypy_moudle.iml" filepath="$PROJECT_DIR$/mypy_moudle/mypy_moudle.iml" />
+    </modules>
+  </component>
+</project>
