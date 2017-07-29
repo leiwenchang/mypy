@@ -10,3 +10,4 @@ if False:
     print("Hello, World!")
 else:
     print("hello")
+print("hello")
