@@ -1,7 +1,8 @@
-import tensorflow as tf
 import numpy as np
-from gen_captcha import gen_captcha_text_and_image
-from tensorflow.examples.tutorials.mnist import  input_data
+import tensorflow as tf
+
+from src.gen_captcha import gen_captcha_text_and_image
+
 MAX_CAPTCHA=1
 CHAR_SET_LEN=10
 def text2vec(text):

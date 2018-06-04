@@ -1,10 +1,10 @@
-from gen_captcha import gen_captcha_text_and_image
-from gen_captcha import number
-from gen_captcha import alphabet
-from gen_captcha import ALPHABET
-
 import numpy as np
 import tensorflow as tf
+
+from src.gen_captcha import ALPHABET
+from src.gen_captcha import alphabet
+from src.gen_captcha import gen_captcha_text_and_image
+from src.gen_captcha import number
 
 text, image = gen_captcha_text_and_image()
 print("验证码图像channel:", image.shape)  # (60, 160, 3)
@@ -174,7 +174,6 @@ def train_crack_captcha_cnn():
     saver = tf.train.Saver()
     with tf.Session() as sess:
         sess.run(tf.global_variables_initializer())
-
         step = 0
         while True:
             batch_x, batch_y = get_next_batch(64)
